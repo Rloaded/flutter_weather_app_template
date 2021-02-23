@@ -3,6 +3,7 @@ import 'package:json_annotation/json_annotation.dart';
 part 'state_data.g.dart';
 
 /// StateData enthält:
+///
 /// [currentDay]: den index des aktuellen Tages
 /// [weatherData]: Liste aller Wetterdaten
 /// [location]: der Stadtname der aktuellen Position

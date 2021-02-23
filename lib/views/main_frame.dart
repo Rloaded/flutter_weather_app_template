@@ -71,7 +71,7 @@ class _MainFrameState extends State<MainFrame> {
     final provider = BlocProvider.of<WeatherBloc>(context);
     provider.add(RefreshData());
     return provider.firstWhere(
-      (element) => element is DataLoaded,
+      (element) => element is DataLoaded || element is DataLoadingFailed,
     );
   }
 
